@@ -61,4 +61,7 @@ fun zipping(){
             it.length
         }
     ))
+    fun flatten(){
+
+    }
 }
