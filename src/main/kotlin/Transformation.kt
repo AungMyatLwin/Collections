@@ -68,3 +68,31 @@ fun flatten(){
     val flattenList= numbers.flatten()
     println(flattenList)
 }
+
+fun toStringify(){
+    val numbers = listOf("One","Two")
+
+    // with curly braces for transformation {}
+    println(numbers.joinToString { s-> "$s " })
+    // with the braces ()
+    println(numbers.joinToString())
+
+    val listString=StringBuffer("The List Numbers:")
+    // joinTo to join two lists
+    println(numbers.joinTo(listString))
+
+    // can have separator
+    println(numbers.joinToString (separator = " <3 "))
+    // prefix and postfix
+    println(numbers.joinToString (separator = " <3 ", prefix = "prefix ", postfix = " postfix"))
+
+    val numberint=(1..100).toList()
+    // can limit with limit keyword
+    println(numberint.joinToString(limit=10))
+    // and use truncate with truncated keyword
+    println(numberint.joinToString(limit=10, truncated = "<..>"))
+
+    // the transform function with {}
+    println(numbers.joinToString { "Element: ${it.lowercase()}" })
+
+}
