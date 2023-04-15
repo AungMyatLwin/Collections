@@ -2,7 +2,9 @@ fun main(args: Array<String>) {
 //    mapping()
 //    zipping()
 //    flatten()
-    toStringify()
+//    toStringify()
+
+    filtering()
 }
 
 fun col(){

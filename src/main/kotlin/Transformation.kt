@@ -96,3 +96,7 @@ fun toStringify(){
     println(numbers.joinToString { "Element: ${it.lowercase()}" })
 
 }
+
+fun filtering(){
+
+}
