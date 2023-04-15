@@ -1,6 +1,7 @@
 fun main(args: Array<String>) {
 //    mapping()
-    zipping()
+//    zipping()
+    flatten()
 }
 
 fun col(){

@@ -61,7 +61,10 @@ fun zipping(){
             it.length
         }
     ))
-    fun flatten(){
+}
 
-    }
+fun flatten(){
+    val numbers = listOf(setOf(1,2), setOf(3,4), setOf(5,6))
+    val flattenList= numbers.flatten()
+    println(flattenList)
 }
