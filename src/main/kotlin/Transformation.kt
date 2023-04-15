@@ -98,5 +98,35 @@ fun toStringify(){
 }
 
 fun filtering(){
+    //  for list
+    val numbers=listOf(1,2,3,4,5,6,7)
+    val x = numbers.filter{
+        t-> t>4
+    }
+    println(x)
+
+    // for map
+    val numberMap= mapOf("k" to 1, "k1" to 2)
+    val filterMap = numberMap.filter { it.key.endsWith(
+        "1"
+    ) && it.value < 5 }
+    println(filterMap)
+
+    // filter with index
+    val filterIndex= numbers.filterIndexed{
+        index, value -> (index!=0) && (value<3)
+    }
+    println("filter with index $filterIndex")
+
+    // if condition is true, return false
+    val filterNot = numbers.filterNot{ t->t>3 }
+    println("filter Not $filterNot")
+
+    // filter is instance
+    val mixedList = listOf(1,2,3, "a","b","c", "hello worrld", "alex", true, 3.4)
+    // filterIsInstance<Type to filter>()
+    mixedList.filterIsInstance<Boolean>().forEach{
+        println(it)
+    }
 
 }

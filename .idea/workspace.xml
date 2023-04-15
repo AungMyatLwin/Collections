@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="182de37f-0b42-4af3-bb90-725f03264b9b" name="Changes" comment="joinTo and joinToString.">
+    <list default="true" id="182de37f-0b42-4af3-bb90-725f03264b9b" name="Changes" comment="filtering .filtering?">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Transformation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Transformation.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681577032448</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="filtering .filtering?">
+      <created>1681577152367</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681577152367</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -111,6 +117,7 @@
     <MESSAGE value="flatten next" />
     <MESSAGE value="flatten ()" />
     <MESSAGE value="joinTo and joinToString." />
-    <option name="LAST_COMMIT_MESSAGE" value="joinTo and joinToString." />
+    <MESSAGE value="filtering .filtering?" />
+    <option name="LAST_COMMIT_MESSAGE" value="filtering .filtering?" />
   </component>
 </project>
