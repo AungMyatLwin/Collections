@@ -128,5 +128,11 @@ fun filtering(){
     mixedList.filterIsInstance<Boolean>().forEach{
         println(it)
     }
-
+    // Partition
+    // separate a list into two based on the condition
+    val (match,unmatch)=numbers.partition{
+        it<3
+    }
+    println(match)
+    println(unmatch)
 }
