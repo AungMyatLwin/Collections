@@ -1,15 +1,15 @@
-fun mapping(){
-    val numbers= setOf<Int>(1,2,3,4,5,6,7)
+fun mapping() {
+    val numbers = setOf<Int>(1, 2, 3, 4, 5, 6, 7)
 
-    println(numbers.map {
-        number-> if(number==3) number*3 else number
+    println(numbers.map { number ->
+        if (number == 3) number * 3 else number
     })
-    println(numbers.mapIndexedNotNull{
-        index, value ->   index+value
+    println(numbers.mapIndexedNotNull { index, value ->
+        index + value
     })
 
 
-    val numbersMap=mapOf<String, Int>("key 1" to 1, "key 2" to 2)
+    val numbersMap = mapOf<String, Int>("key 1" to 1, "key 2" to 2)
     // mapKeys
     println(numbersMap.mapKeys {
         it.key.uppercase()
@@ -19,22 +19,22 @@ fun mapping(){
         it.value + it.key.length
     })
     // map with arrow function
-    println(numbersMap.mapKeys {
-        t->t.key+"CC"
+    println(numbersMap.mapKeys { t ->
+        t.key + "CC"
     })
 }
 
-fun zipping(){
-    val colors = listOf("red", "brown","grey")
-    val animals = listOf("fox","bear","wolf")
+fun zipping() {
+    val colors = listOf("red", "brown", "grey")
+    val animals = listOf("fox", "bear", "wolf")
 
     // zip
     println(colors.zip(animals))
     println(colors zip animals)
-    println(colors.zip(animals){
-        color, animal -> animal.replaceFirstChar {
+    println(colors.zip(animals) { color, animal ->
+        animal.replaceFirstChar {
             it.uppercase()
-    }
+        }
     })
 
     // unzipping
@@ -44,7 +44,7 @@ fun zipping(){
 
     // association
     // as a key
-    val numbers = listOf("one","two", "three", "four")
+    val numbers = listOf("one", "two", "three", "four")
     println(numbers.associateWith {
         it.length
     })
@@ -55,84 +55,134 @@ fun zipping(){
     })
 
     // with value transformation
-    println(numbers.associateBy (
-        keySelector = { it.first().uppercase()},
-        valueTransform={
+    println(numbers.associateBy(
+        keySelector = { it.first().uppercase() },
+        valueTransform = {
             it.length
         }
     ))
 }
 
-fun flatten(){
-    val numbers = listOf(setOf(1,2), setOf(3,4), setOf(5,6))
-    val flattenList= numbers.flatten()
+fun flatten() {
+    val numbers = listOf(setOf(1, 2), setOf(3, 4), setOf(5, 6))
+    val flattenList = numbers.flatten()
     println(flattenList)
 }
 
-fun toStringify(){
-    val numbers = listOf("One","Two")
+fun toStringify() {
+    val numbers = listOf("One", "Two")
 
     // with curly braces for transformation {}
-    println(numbers.joinToString { s-> "$s " })
+    println(numbers.joinToString { s -> "$s " })
     // with the braces ()
     println(numbers.joinToString())
 
-    val listString=StringBuffer("The List Numbers:")
+    val listString = StringBuffer("The List Numbers:")
     // joinTo to join two lists
     println(numbers.joinTo(listString))
 
     // can have separator
-    println(numbers.joinToString (separator = " <3 "))
+    println(numbers.joinToString(separator = " <3 "))
     // prefix and postfix
-    println(numbers.joinToString (separator = " <3 ", prefix = "prefix ", postfix = " postfix"))
+    println(numbers.joinToString(separator = " <3 ", prefix = "prefix ", postfix = " postfix"))
 
-    val numberint=(1..100).toList()
+    val numberint = (1..100).toList()
     // can limit with limit keyword
-    println(numberint.joinToString(limit=10))
+    println(numberint.joinToString(limit = 10))
     // and use truncate with truncated keyword
-    println(numberint.joinToString(limit=10, truncated = "<..>"))
+    println(numberint.joinToString(limit = 10, truncated = "<..>"))
 
     // the transform function with {}
     println(numbers.joinToString { "Element: ${it.lowercase()}" })
 
 }
 
-fun filtering(){
+fun filtering() {
     //  for list
-    val numbers=listOf(1,2,3,4,5,6,7)
-    val x = numbers.filter{
-        t-> t>4
+    val numbers = listOf(1, 2, 3, 4, 5, 6, 7)
+    val x = numbers.filter { t ->
+        t > 4
     }
     println(x)
 
     // for map
-    val numberMap= mapOf("k" to 1, "k1" to 2)
-    val filterMap = numberMap.filter { it.key.endsWith(
-        "1"
-    ) && it.value < 5 }
+    val numberMap = mapOf("k" to 1, "k1" to 2)
+    val filterMap = numberMap.filter {
+        it.key.endsWith(
+            "1"
+        ) && it.value < 5
+    }
     println(filterMap)
 
     // filter with index
-    val filterIndex= numbers.filterIndexed{
-        index, value -> (index!=0) && (value<3)
+    val filterIndex = numbers.filterIndexed { index, value ->
+        (index != 0) && (value < 3)
     }
     println("filter with index $filterIndex")
 
     // if condition is true, return false
-    val filterNot = numbers.filterNot{ t->t>3 }
+    val filterNot = numbers.filterNot { t -> t > 3 }
     println("filter Not $filterNot")
 
     // filter is instance
-    val mixedList = listOf(1,2,3, "a","b","c", "hello worrld", "alex", true, 3.4)
+    val mixedList = listOf(1, 2, 3, "a", "b", "c", "hello worrld", "alex", true, 3.4)
     // filterIsInstance<Type to filter>()
-    mixedList.filterIsInstance<Boolean>().forEach{
+    mixedList.filterIsInstance<Boolean>().forEach {
         println(it)
     }
     // Partition
     // separate a list into two based on the condition
-    val (match,unmatch)=numbers.partition{
-        it<3
+    val (match, unmatch) = numbers.partition {
+        it < 3
     }
     println(match)
     println(unmatch)
+}
+
+fun predicateTest() {
+    val numbers = listOf(1, 22, 4, 44, 6, 5, 7)
+    //any
+    var isAny = numbers.any {
+        it == 3
+    }
+    println(isAny)
+    //none
+    isAny = numbers.none {
+        it == 3
+    }
+    println(isAny)
+    // all
+    isAny = numbers.all {
+        it == 3
+    }
+    println(isAny)
+
+}
+
+fun plusMinus() {
+    val numbers = mutableListOf("obe", "two", "thrree")
+    val plusList = numbers + "FIVE"
+    val minusList = numbers - "obe"
+    println("$numbers, $plusList, $minusList")
+}
+
+fun grouping() {
+    val numbers = listOf("one", "two", "three", "four", "five")
+
+    // groupBy{}
+    println(numbers.groupBy { it.first().uppercase() })
+
+    // groupBy with KeySelector and value
+    println(numbers.groupBy(keySelector = {
+        it.first()
+    }, valueTransform = {
+        it.uppercase()
+    }))
+}
+
+fun retrieveCollectionPart(){
+    val numbers= listOf("one", "two", "three","four","five","six")
+    println(numbers.slice(1..3))
+    println(numbers.slice(0..4 step 2))
+    println(numbers.slice(setOf(3,5,0 )))
 }

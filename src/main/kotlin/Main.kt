@@ -1,10 +1,5 @@
 fun main(args: Array<String>) {
-//    mapping()
-//    zipping()
-//    flatten()
-//    toStringify()
-
-    filtering()
+    retrieveCollectionPart()
 }
 
 fun col(){
@@ -12,3 +7,15 @@ fun col(){
     Collections.sets()
     Collections.maps()
 }
+fun transformation(){
+    mapping()
+    zipping()
+    flatten()
+    toStringify()
+    filtering()
+    predicateTest()
+    plusMinus()
+    grouping()
+}
+
+
