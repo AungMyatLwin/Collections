@@ -182,7 +182,14 @@ fun grouping() {
 
 fun retrieveCollectionPart(){
     val numbers= listOf("one", "two", "three","four","five","six")
+    //slice
     println(numbers.slice(1..3))
     println(numbers.slice(0..4 step 2))
     println(numbers.slice(setOf(3,5,0 )))
+    // take
+    println(numbers.take(3))
+    println(numbers.takeLast(3))
+    // drop
+    println(numbers.drop(3))
+    println(numbers.dropLast(5))
 }
