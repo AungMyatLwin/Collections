@@ -269,3 +269,42 @@ fun aggregation(){
         it*2
     })
 }
+
+fun toCompare(){
+    val numbers = mutableListOf(2,4,5,6,1,4,5,20,100,39,60)
+    // order
+    numbers.sorted().forEach{
+        println(it)
+    }
+    // can use sorted, it used comparable interface
+
+    val laptops= mutableListOf<Laptop>(
+        Laptop("Macbook m1 air",2020, 999),
+        Laptop("Macbook m2 pro", 2022, 1999),
+        Laptop("Acer E", 2017, 600)
+    )
+    // cant sort laptop
+//    laptops.sorted() without Comparable interface
+//    after extending Comparable interface
+    println(laptops.sorted())
+
+    // comparable for only property
+    // comparator  for multiple property
+
+    // comparator to use sortedWith for Price
+    laptops.sortedWith(ComparatorRam()).forEach{
+        println(it)
+    }
+
+    // comparator to use sortedWith for year
+    println(laptops.sortedWith(ComparatorYear()))
+
+    // with lambda function, no need to implement the interface
+    println("lambdas ${laptops.sortedWith(compareBy { it.price })}")
+    println("lambdas ${laptops.sortedWith(compareBy { it.year })}")
+    // shorter way
+    println("shorter way ${laptops.sortedBy { it.price }}")
+    println("shorter way ${laptops.sortedBy { it.year }}")
+    // .thenBy
+    println("then ${laptops.sortedWith(compareBy<Laptop> { it.price }.thenBy { it.year })}")
+}

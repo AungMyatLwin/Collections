@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="182de37f-0b42-4af3-bb90-725f03264b9b" name="Changes" comment="retrieveSingleElement">
+    <list default="true" id="182de37f-0b42-4af3-bb90-725f03264b9b" name="Changes" comment="Aggregation(sum,sumOf,count,average,max,maxOrNull,min,minOrNull)">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Laptops.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Transformation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Transformation.kt" afterDir="false" />
@@ -172,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681741150474</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Aggregation(sum,sumOf,count,average,max,maxOrNull,min,minOrNull)">
+      <created>1681761504864</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1681761504864</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -189,6 +197,7 @@
     <MESSAGE value="takeWhile, takeLastWhile, dropWhile,dropLastWhile" />
     <MESSAGE value="chunked(Int)" />
     <MESSAGE value="retrieveSingleElement" />
-    <option name="LAST_COMMIT_MESSAGE" value="retrieveSingleElement" />
+    <MESSAGE value="Aggregation(sum,sumOf,count,average,max,maxOrNull,min,minOrNull)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggregation(sum,sumOf,count,average,max,maxOrNull,min,minOrNull)" />
   </component>
 </project>

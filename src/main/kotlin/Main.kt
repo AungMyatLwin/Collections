@@ -1,5 +1,6 @@
 fun main(args: Array<String>) {
-    aggregation()
+    toCompare()
+
 }
     fun col(){
     Collections.lists()
@@ -17,6 +18,7 @@ fun transformation(){
     grouping()
     retrieveCollectionPart()
     retrieveSingleElement()
+    aggregation()
 }
 
 
