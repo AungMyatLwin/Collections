@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="182de37f-0b42-4af3-bb90-725f03264b9b" name="Changes" comment="predicateTest,plusMinus,grouping&#10;and now retrieveCollectionPart">
+    <list default="true" id="182de37f-0b42-4af3-bb90-725f03264b9b" name="Changes" comment="slice, take, and drop">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Transformation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Transformation.kt" afterDir="false" />
     </list>
@@ -129,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681709469653</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="slice, take, and drop">
+      <created>1681714614537</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1681714614537</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -142,6 +149,7 @@
     <MESSAGE value="filter(list&amp;Map),filterIndex,FilterNot,filterIsInstance&lt;T&gt;" />
     <MESSAGE value="filter(list&amp;Map),filterIndex,FilterNot,filterIsInstance&lt;T&gt;,&#10;partition" />
     <MESSAGE value="predicateTest,plusMinus,grouping&#10;and now retrieveCollectionPart" />
-    <option name="LAST_COMMIT_MESSAGE" value="predicateTest,plusMinus,grouping&#10;and now retrieveCollectionPart" />
+    <MESSAGE value="slice, take, and drop" />
+    <option name="LAST_COMMIT_MESSAGE" value="slice, take, and drop" />
   </component>
 </project>

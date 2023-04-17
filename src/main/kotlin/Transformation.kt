@@ -192,4 +192,27 @@ fun retrieveCollectionPart(){
     // drop
     println(numbers.drop(3))
     println(numbers.dropLast(5))
+
+    // takeWhile
+    println(
+        numbers.takeWhile {
+            !it.startsWith("f")
+        }
+    )
+
+    // takeLastWhile
+    println(numbers.takeLastWhile {
+        it !="three"
+    })
+
+    // dropWhile
+    println(numbers.dropWhile {
+        !it.startsWith("f")
+    })
+    // dropLastWhile
+    println(
+        numbers.dropLastWhile {
+            !it.startsWith("f")
+        }
+    )
 }
