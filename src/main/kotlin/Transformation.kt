@@ -212,7 +212,10 @@ fun retrieveCollectionPart(){
     // dropLastWhile
     println(
         numbers.dropLastWhile {
-            it.startsWith("f")
+            it.contains("i")
         }
     )
+    // chunked
+    val chunkNumber =( 0..13).toList()
+    println(chunkNumber.chunked(3))
 }
