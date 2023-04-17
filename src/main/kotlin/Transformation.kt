@@ -247,5 +247,25 @@ fun retrieveSingleElement(){
 
     // isEmpty
     println(numbers.isEmpty())
+}
 
+fun aggregation(){
+    val numbers= listOf(5,10,14,5,3,120)
+    // sum
+    println(numbers.sum())
+    // count
+    println(numbers.count())
+    // average
+    println(numbers.average())
+    // max
+    println(numbers.max())
+    println(numbers.maxOrNull())
+    // min
+    println(numbers.min())
+    println(numbers.minOrNull())
+
+    // sumOf
+    println(numbers.sumOf{
+        it*2
+    })
 }

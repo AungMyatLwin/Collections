@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="182de37f-0b42-4af3-bb90-725f03264b9b" name="Changes" comment="chunked(Int)">
+    <list default="true" id="182de37f-0b42-4af3-bb90-725f03264b9b" name="Changes" comment="retrieveSingleElement">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Transformation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Transformation.kt" afterDir="false" />
     </list>
@@ -164,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681741080611</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="retrieveSingleElement">
+      <created>1681741150474</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1681741150474</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -180,6 +188,7 @@
     <MESSAGE value="slice, take, and drop" />
     <MESSAGE value="takeWhile, takeLastWhile, dropWhile,dropLastWhile" />
     <MESSAGE value="chunked(Int)" />
-    <option name="LAST_COMMIT_MESSAGE" value="chunked(Int)" />
+    <MESSAGE value="retrieveSingleElement" />
+    <option name="LAST_COMMIT_MESSAGE" value="retrieveSingleElement" />
   </component>
 </project>

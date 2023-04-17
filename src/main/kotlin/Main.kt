@@ -1,5 +1,5 @@
 fun main(args: Array<String>) {
-    retrieveSingleElement()
+    aggregation()
 }
     fun col(){
     Collections.lists()
@@ -16,7 +16,7 @@ fun transformation(){
     plusMinus()
     grouping()
     retrieveCollectionPart()
-
+    retrieveSingleElement()
 }
 
 
