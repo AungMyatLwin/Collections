@@ -212,7 +212,7 @@ fun retrieveCollectionPart(){
     // dropLastWhile
     println(
         numbers.dropLastWhile {
-            !it.startsWith("f")
+            it.startsWith("f")
         }
     )
 }

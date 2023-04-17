@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="182de37f-0b42-4af3-bb90-725f03264b9b" name="Changes" comment="slice, take, and drop">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="182de37f-0b42-4af3-bb90-725f03264b9b" name="Changes" comment="takeWhile, takeLastWhile, dropWhile,dropLastWhile">
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Transformation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Transformation.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681714614537</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="takeWhile, takeLastWhile, dropWhile,dropLastWhile">
+      <created>1681737163886</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1681737163886</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -150,6 +156,7 @@
     <MESSAGE value="filter(list&amp;Map),filterIndex,FilterNot,filterIsInstance&lt;T&gt;,&#10;partition" />
     <MESSAGE value="predicateTest,plusMinus,grouping&#10;and now retrieveCollectionPart" />
     <MESSAGE value="slice, take, and drop" />
-    <option name="LAST_COMMIT_MESSAGE" value="slice, take, and drop" />
+    <MESSAGE value="takeWhile, takeLastWhile, dropWhile,dropLastWhile" />
+    <option name="LAST_COMMIT_MESSAGE" value="takeWhile, takeLastWhile, dropWhile,dropLastWhile" />
   </component>
 </project>
