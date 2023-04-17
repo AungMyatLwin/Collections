@@ -226,7 +226,8 @@ fun retrieveCollectionPart(){
     println(numbers.windowed(3))
 }
 
-fun isEmptyisEmptyisEmpty(){
+fun retrieveSingleElement(){
+
     val numbers= listOf("One","Two","Three","Four","Five")
     // element position
     println(numbers.elementAt(1))

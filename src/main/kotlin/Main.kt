@@ -1,5 +1,5 @@
 fun main(args: Array<String>) {
-    isEmptyisEmptyisEmpty()
+    retrieveSingleElement()
 }
     fun col(){
     Collections.lists()
