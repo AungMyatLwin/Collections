@@ -1,8 +1,7 @@
 fun main(args: Array<String>) {
-    retrieveCollectionPart()
+    isEmptyisEmptyisEmpty()
 }
-
-fun col(){
+    fun col(){
     Collections.lists()
     Collections.sets()
     Collections.maps()
@@ -16,6 +15,8 @@ fun transformation(){
     predicateTest()
     plusMinus()
     grouping()
+    retrieveCollectionPart()
+
 }
 
 

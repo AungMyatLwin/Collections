@@ -218,4 +218,33 @@ fun retrieveCollectionPart(){
     // chunked
     val chunkNumber =( 0..13).toList()
     println(chunkNumber.chunked(3))
+    println(chunkNumber.chunked(3){
+        it.sum()
+    })
+
+    // windowed
+    println(numbers.windowed(3))
+}
+
+fun isEmptyisEmptyisEmpty(){
+    val numbers= listOf("One","Two","Three","Four","Five")
+    // element position
+    println(numbers.elementAt(1))
+    //first
+    println(numbers.first())
+    println(numbers.first{
+        it.length<3
+    })
+    // last
+    println(numbers.last())
+    println(numbers.last{
+        it.length<3
+    })
+
+    // random
+    println(numbers.random())
+
+    // isEmpty
+    println(numbers.isEmpty())
+
 }
