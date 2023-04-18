@@ -308,3 +308,7 @@ fun toCompare(){
     // .thenBy
     println("then ${laptops.sortedWith(compareBy<Laptop> { it.price }.thenBy { it.year })}")
 }
+
+fun binarySearch(searchedElement: Int, numbers:MutableList<Int>):Int{
+    return  numbers[numbers.binarySearch(393)]
+}
